@@ -1,0 +1,17 @@
+@startuml
+skinparam style strictuml
+hide empty members
+
+title Modelo del Dominio: Simpatía
+
+class Persona
+class InteraccionSocial
+class PercepcionEmpatica
+class EvaluadorEmpatia
+
+Persona "1" -- "1..*" InteraccionSocial : realiza >
+InteraccionSocial "1..*" -- "1..*" PercepcionEmpatica : genera >
+Persona "1" -- "1..*" EvaluadorEmpatia : es evaluada por >
+PercepcionEmpatica "1..*" -- "1" EvaluadorEmpatia : es procesada por >
+
+@enduml
