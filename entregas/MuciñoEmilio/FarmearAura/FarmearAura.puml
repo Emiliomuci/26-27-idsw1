@@ -1,0 +1,20 @@
+@startuml
+skinparam style strictuml
+hide empty members
+
+title Modelo del Dominio: Farmear Aura
+
+class Persona
+class AccionRealizada
+class ImpactoAura
+class Observador
+class Validador
+class CriterioAura
+
+Persona "1" -- "1..*" AccionRealizada : ejecuta >
+AccionRealizada "1..*" -- "1..*" ImpactoAura : genera >
+Persona "1" -- "1..*" Observador : es evaluado por >
+AccionRealizada "1" -- "1" Validador : es verificada por >
+ImpactoAura "1" -- "1" CriterioAura : se rige por >
+
+@enduml
