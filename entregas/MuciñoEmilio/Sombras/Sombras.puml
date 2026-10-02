@@ -1,0 +1,31 @@
+
+```plantuml
+@startuml
+skinparam style strictuml
+hide empty members
+
+title Modelo del Dominio: Óptica de Sombras
+
+class FuenteDeLuz {
+
+}
+
+class Objeto {
+ 
+}
+
+class Sombra {
+  
+}
+
+class Superficie {
+ 
+}
+
+FuenteDeLuz "1" -- "*" Sombra : emite luz hacia >
+Objeto "1" -- "*" Sombra : ocluye la luz de >
+Sombra "*" -- "1" Superficie : se proyecta en >
+
+@endl
+
+```
