@@ -52,7 +52,7 @@ El **Modelo del Dominio de Simpatía** evalúa cómo la conducta social y la dis
 
 ## 5. Representación Gráfica del Modelo
 
-![Modelo del Dominio Simpatia](./Simpatía.png)
+![Modelo del Dominio Simpatia](./Simpatia.png)
 
 
 
